@@ -15,4 +15,5 @@ Skin.lua
 Help.lua
 Poisons.lua
 Reagents.lua
+ComboPoints.lua
 Options.lua

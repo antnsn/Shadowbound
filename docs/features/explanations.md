@@ -1,7 +1,7 @@
 ---
 title: Explanations
 parent: Features
-nav_order: 6
+nav_order: 7
 description: What each card and button does and why, in its tooltip.
 ---
 

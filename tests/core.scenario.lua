@@ -8,7 +8,7 @@ if wb.mood == "rogue" then
 	wb.check(wb.shown("ShadowboundOptions"), "/shadow opens the options")
 	local titles = {}
 	for _, p in ipairs(wb.ns.optionsState.pages) do titles[#titles + 1] = p.title end
-	wb.expect("pages", table.concat(titles, ", "), "Poisons, Reagents, Travel, Extras, Skin")
+	wb.expect("pages", table.concat(titles, ", "), "Poisons, Reagents, Combo points, Travel, Extras, Skin")
 	wb.openGameMenu()
 	wb.expect("the travel panel (Hearthstone only) with the menu", wb.shown("ShadowboundTravel"), true)
 else

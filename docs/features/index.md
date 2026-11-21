@@ -12,6 +12,7 @@ Shadowbound does a few small rogue jobs for you. Each page below covers one of t
 - [Poisons](poisons.html): a card for each weapon when it has no poison or the poison runs out soon. Click to apply.
 - [Buff key](buff-key.html): one key that applies the poison a card asks for.
 - [Reagents](reagents.html): a card when Flash Powder, Blinding Powder or your poisons run low.
+- [Combo points](combo-points.html): five drops, one lit for each combo point on your target, with a pulse at 5.
 - [Travel panel](travel.html): your Hearthstone beside the game menu.
 - [Well-Rested and Well Fed](well-rested-and-well-fed.html): a warning and a countdown before they run out.
 - [Explanations](explanations.html): what each card and button does, in the tooltip.

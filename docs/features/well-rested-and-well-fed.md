@@ -1,7 +1,7 @@
 ---
 title: Well-Rested and Well Fed
 parent: Features
-nav_order: 5
+nav_order: 6
 description: A warning and a countdown card before Well-Rested or Well Fed runs out.
 ---
 

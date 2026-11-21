@@ -12,6 +12,7 @@ Full guide: https://antnsn.github.io/Shadowbound/
   Poison for the main hand and Deadly Poison (else Crippling) for the off hand.
 - **Reagents**: says when Flash Powder (Vanish), Blinding Powder (Blind) or the poisons you use
   run low.
+- **Combo points**: five drops, one lit for each combo point on your target, with a pulse at 5.
 - **Travel**: press Escape, and beside the game menu you get your Hearthstone.
 - **Buff key** (Extras page): out of combat, each press applies the poison the top card asks for.
 - **Well-Rested and Well Fed** timers, plain-word explanations in tooltips, movable frames

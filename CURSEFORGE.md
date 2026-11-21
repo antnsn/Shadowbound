@@ -1,10 +1,10 @@
 <!-- summary (CurseForge "Summary" field, at most 256 characters):
-Rogue helper for WoW: Forever: a card per weapon when its poison is missing or running out (click to apply the best rank in your bags), and warnings before Flash Powder, Blinding Powder or your poisons run out.
+Rogue helper for WoW: Forever: a card per weapon when its poison is missing or running out (click to apply the best rank in your bags), warnings before Flash Powder, Blinding Powder or your poisons run out, and a combo point bar.
 -->
 
 # Shadowbound
 
-**The rogue helper for World of Warcraft: Forever: your poisons and reagents, explained.**
+**The rogue helper for World of Warcraft: Forever: your poisons, reagents and combo points.**
 
 Shadowbound keeps poison on your weapons and your bags stocked: a card for each weapon when its poison is missing or running out, and a warning before Flash Powder, Blinding Powder or your poisons run out.
 
@@ -21,6 +21,11 @@ Shadowbound keeps poison on your weapons and your bags stocked: a card for each 
 ## Reagents
 - Says when your **Flash Powder** (for Vanish) or **Blinding Powder** (for Blind) runs low, once you know the spell.
 - Says when the **poisons you picked** run low (all ranks counted).
+
+## Combo points
+- **Five drops**, one lit for each combo point on your target. Shown while you have points or are in combat.
+- **A pulse at 5**: time for a finisher.
+- Move and resize it like the cards.
 
 ## Travel
 - **Press Escape**: beside the game menu you get your Hearthstone.

@@ -10,6 +10,7 @@ from PIL import Image, ImageChops, ImageDraw, ImageFilter
 
 OUT = "Media/"
 ART = "Shadowbound.png"  # painted by Marius: the logo, icon and crest are made from it
+COMBO = "ComboPoint.png"  # painted by Marius: the combo point drop
 
 
 def smoke(size=128, seed=13):
@@ -105,6 +106,18 @@ def icon(size, art=ART):
     return Image.alpha_composite(bg, e)
 
 
+def combo_point(size=64, art=COMBO):
+    """The combo point drop, trimmed to its painted part and centred on a square (the game greys it
+    for an empty point)."""
+    img = Image.open(art).convert("RGBA")
+    img = img.crop(img.getchannel("A").getbbox())
+    w, h = img.size
+    side = max(w, h)
+    sq = Image.new("RGBA", (side, side), (0, 0, 0, 0))
+    sq.paste(img, ((side - w) // 2, (side - h) // 2))
+    return sq.resize((size, size), Image.LANCZOS)
+
+
 def save(img, name):
     img.save(OUT + name + ".tga")
     print("wrote", OUT + name + ".tga", img.size)
@@ -119,3 +132,4 @@ if __name__ == "__main__":
     save(emblem(64), "Logo64")
     save(icon(64), "Icon64")
     save(icon(128), "Icon128")
+    save(combo_point(), "ComboPoint")

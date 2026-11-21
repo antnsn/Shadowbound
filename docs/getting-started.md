@@ -31,7 +31,7 @@ Shadowbound only loads on rogues. On any other character it turns itself off for
 
 Type `/shadow` in chat, or click the Shadowbound button on your minimap.
 
-The options window has five pages on the left: **Poisons**, **Reagents**, **Travel**, **Extras** and **Skin**. Everything is on by default.
+The options window has six pages on the left: **Poisons**, **Reagents**, **Combo points**, **Travel**, **Extras** and **Skin**. Everything is on by default.
 
 The default skin, Shadow, is near-black with a purple edge. See [Skins](features/skins.html).
 

@@ -1,7 +1,7 @@
 ---
 title: Frames and minimap
 parent: Features
-nav_order: 7
+nav_order: 8
 description: Moving and resizing every frame, the grid, and the minimap button.
 ---
 

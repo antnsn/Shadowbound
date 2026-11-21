@@ -30,6 +30,7 @@ Shadowbound watches all of that. It shows a card when a weapon has no poison or 
 - **Poison cards.** A card for each weapon when it has no poison or the poison runs out soon. Click it to apply the poison you picked for that hand, the best rank in your bags. [More](features/poisons.html)
 - **Buff key.** Out of combat, each press applies the poison a card asks for. [More](features/buff-key.html)
 - **Reagents.** A card when Flash Powder, Blinding Powder or the poisons you use run low. [More](features/reagents.html)
+- **Combo points.** Five drops, one lit for each combo point on your target, with a pulse at 5. [More](features/combo-points.html)
 - **Travel panel.** Press Escape: your Hearthstone sits beside the game menu. [More](features/travel.html)
 - **Well-Rested and Well Fed.** A warning and a countdown before they run out. [More](features/well-rested-and-well-fed.html)
 - **Explanations.** Hover over a card or button to read what it does and why. [More](features/explanations.html)
