@@ -46,6 +46,14 @@ if m == "none" then
 elseif m == "some" then
 	wb.expect("shown with points", shown, true)
 	wb.expect("three lit", Lit(), 3)
+	local glows = 0
+	for i, p in ipairs(bar.pips) do
+		wb.check(p.glow ~= nil, "drop " .. i .. " has a glow")
+		if p.glow:IsShown() then glows = glows + 1 end
+	end
+	wb.expect("a green glow round each lit drop only", glows, 3)
+	local c = bar.pips[1].glow.__color or {}
+	wb.check((c[2] or 0) > (c[1] or 0) and (c[2] or 0) > (c[3] or 0), "and it is green")
 	wb.expect("no pulse below 5", bar.pulse:IsPlaying(), false)
 elseif m == "five" then
 	wb.expect("all lit", Lit(), 5)
