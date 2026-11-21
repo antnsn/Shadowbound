@@ -10,7 +10,8 @@ from PIL import Image, ImageChops, ImageDraw, ImageFilter
 
 OUT = "Media/"
 ART = "Shadowbound.png"  # painted by Marius: the logo, icon and crest are made from it
-COMBO = "ComboPoint.png"  # painted by Marius: the combo point drop
+# The combo point drop (ComboPoint.png, painted by Marius) is made by LibBound's tool:
+#   python3 ../LibBound/tools/make_combo_media.py ComboPoint.png Media
 
 
 def smoke(size=128, seed=13):
@@ -106,32 +107,6 @@ def icon(size, art=ART):
     return Image.alpha_composite(bg, e)
 
 
-def combo_point(size=64, art=COMBO):
-    """The combo point drop, trimmed to its painted part and centred on a square (the game greys it
-    for an empty point)."""
-    img = Image.open(art).convert("RGBA")
-    img = img.crop(img.getchannel("A").getbbox())
-    w, h = img.size
-    side = max(w, h)
-    sq = Image.new("RGBA", (side, side), (0, 0, 0, 0))
-    sq.paste(img, ((side - w) // 2, (side - h) // 2))
-    return sq.resize((size, size), Image.LANCZOS)
-
-
-def combo_glow(size=64, art=COMBO):
-    """A soft glow in the drop's shape, white on alpha (the game tints it green and adds it behind
-    a lit drop): the drop's outline, grown and blurred."""
-    drop = combo_point(size, art).getchannel("A")
-    small = drop.resize((size * 3 // 5, size * 3 // 5), Image.LANCZOS)  # room round the edge to glow into
-    a = Image.new("L", (size, size), 0)
-    a.paste(small, ((size - small.width) // 2, (size - small.height) // 2))
-    a = a.filter(ImageFilter.MaxFilter(5)).filter(ImageFilter.GaussianBlur(5))
-    a = a.point(lambda v: min(255, int(v * 1.6)))
-    out = Image.new("RGBA", (size, size), (255, 255, 255, 0))
-    out.putalpha(a)
-    return out
-
-
 def save(img, name):
     img.save(OUT + name + ".tga")
     print("wrote", OUT + name + ".tga", img.size)
@@ -146,5 +121,3 @@ if __name__ == "__main__":
     save(emblem(64), "Logo64")
     save(icon(64), "Icon64")
     save(icon(128), "Icon128")
-    save(combo_point(), "ComboPoint")
-    save(combo_glow(), "ComboGlow")
