@@ -8,6 +8,8 @@ Rogue helper for WoW: Forever: a card per weapon when its poison is missing or r
 
 Shadowbound keeps poison on your weapons and your bags stocked: a card for each weapon when its poison is missing or running out, and a warning before Flash Powder, Blinding Powder or your poisons run out.
 
+**Full guide:** https://antnsn.github.io/Shadowbound/
+
 **Beta:** Shadowbound is new. Spell and item IDs come from Classic and are checked on Forever before 0.1.0; tell us what doesn't work.
 
 ## Poisons
@@ -47,7 +49,7 @@ Shadowbound keeps poison on your weapons and your bags stocked: a card for each 
 - **Want a Bound addon for another class?** The shared core, LibBound, has a guide and API reference: https://antnsn.github.io/LibBound/
 
 ## The Bound family
-Shadowbound is one of the Bound addons, one per class, built on the same core: Lightbound (paladin), Chronobound (mage), Stormbound (shaman), Packbound (hunter), Spiritbound (priest), Felbound (warlock), Dreambound (druid) and Shadowbound (rogue). They look like their class but work the same way, so if you know one, you know them all.
+Shadowbound is one of the Bound addons, one per class, built on the same core: Lightbound (paladin), Chronobound (mage), Stormbound (shaman), Packbound (hunter), Spiritbound (priest), Felbound (warlock), Dreambound (druid), Ragebound (warrior) and Shadowbound (rogue). They look like their class but work the same way, so if you know one, you know them all.
 
 ## Changelog
 <!-- changelog:start -->

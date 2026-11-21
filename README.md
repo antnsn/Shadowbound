@@ -3,7 +3,9 @@
 # Shadowbound
 
 A rogue helper for **WoW: Forever**, part of the Bound family: one addon per class on the same
-core (Lightbound, Chronobound, Stormbound, Packbound, Spiritbound, Felbound, Dreambound, Shadowbound).
+core (Lightbound, Chronobound, Stormbound, Packbound, Spiritbound, Felbound, Dreambound, Ragebound, Shadowbound).
+
+Full guide: https://antnsn.github.io/Shadowbound/
 
 - **Poisons**: a card for each weapon when it has no poison or the poison runs out soon. Click it
   to apply the poison you picked for that hand, the best rank in your bags. Auto picks Instant
