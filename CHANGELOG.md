@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.0 beta 6
+
+- Built on the latest LibBound, the shared core of the Bound addons, with its small fixes. Published on CurseForge straight from GitHub now.
+
 ## 0.1.0 beta 5
 
 - In the Blizzard and Flat skins the combo points take a plain look: five squares, lit green.
