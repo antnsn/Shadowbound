@@ -1,0 +1,47 @@
+title: Shadowbound
+description: The rogue helper for World of Warcraft Forever. How to use it, page by page.
+url: https://antnsn.github.io
+baseurl: /Shadowbound
+
+theme: just-the-docs
+color_scheme: shadowbound
+logo: https://raw.githubusercontent.com/antnsn/Shadowbound/main/Shadowbound.png
+favicon_ico: https://raw.githubusercontent.com/antnsn/Shadowbound/main/Shadowbound.png
+
+search_enabled: true
+heading_anchors: true
+back_to_top: true
+back_to_top_text: Back to top
+
+aux_links:
+  CurseForge:
+    - https://www.curseforge.com/wow/addons/shadowbound
+  GitHub:
+    - https://github.com/antnsn/Shadowbound
+aux_links_new_tab: true
+
+footer_content: Shadowbound is a fan-made addon for World of Warcraft Forever. Not affiliated with Blizzard Entertainment.
+
+callouts:
+  note:
+    title: Note
+    color: yellow
+  warning:
+    title: Careful
+    color: red
+  tip:
+    title: Tip
+    color: green
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - .bundle
+
+# every page gets the theme layout (GitHub's own Pages build adds this implicitly; Jekyll 4 does not)
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
