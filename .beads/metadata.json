@@ -1,0 +1,7 @@
+{
+  "database": "dolt",
+  "backend": "dolt",
+  "dolt_mode": "embedded",
+  "dolt_database": "Shadowbound",
+  "project_id": "658d1a01-4011-48b8-867b-d578d5e0ed21"
+}
