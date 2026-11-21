@@ -13,7 +13,7 @@ Your finishers get stronger with each combo point. Shadowbound shows them as fiv
 
 - **Five drops.** One is lit green for each combo point on your target. The rest are grey.
 - **When it shows.** While you have combo points, and the whole time you are in combat. Out of combat with no points, it hides. Turn on **Always show the bar** to keep it up.
-- **Pulse at 5.** When you reach 5 points, the bar swells twice: time for a finisher. It pulses once each time you reach 5, not again while you stay there.
+- **Pulse at 5.** When you reach 5 points, the drops flash a few times: time for a finisher. They flash once each time you reach 5, not again while you stay there.
 - **Your size and place.** Unlock the frames to drag the bar where you want it, and scroll on it to make it bigger or smaller.
 
 ## How to use it
@@ -28,7 +28,7 @@ In `/shadow`, page **Combo points**:
 | Setting | Default | What it does |
 | --- | --- | --- |
 | Show the combo point bar | On | Turns the bar on or off. |
-| Pulse at 5 points | On | The bar swells twice when you reach 5 points. |
+| Pulse at 5 points | On | The drops flash a few times when you reach 5 points. |
 | Always show the bar | Off | Keeps the bar up out of combat with no points too. |
 
 ## Good to know
