@@ -1,7 +1,7 @@
 ---
 title: Skins
 parent: Features
-nav_order: 8
+nav_order: 9
 description: Pick how Shadowbound looks, Shadow, classic Blizzard or flat.
 ---
 

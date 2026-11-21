@@ -24,5 +24,6 @@ ignore:
   - .claude
   - CURSEFORGE.md
   - Shadowbound.png
+  - ComboPoint.png
   - README.md
   - .gitignore

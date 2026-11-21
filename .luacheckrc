@@ -6,4 +6,5 @@ ignore = { "212", "432" }
 exclude_files = { "Libs/", "tests/", "tools/" }
 read_globals = {
 	"C_Item", "C_Timer", "CreateFrame", "GetInventoryItemID", "GetWeaponEnchantInfo", "InCombatLockdown", "LibStub",
+	"Enum", "GetComboPoints", "UIParent", "UnitPower",
 }

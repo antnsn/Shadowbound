@@ -33,6 +33,15 @@ local function ReagentPage(UI)
 	p:Add(select(2, UI.Slider(p, p.y, "Poisons: warn at", "poisonLow", 0, 20, 1, " left")) + 8)
 end
 
+local function ComboPage(UI)
+	local p = UI.NewPage("Combo points", "Five drops, one lit for each combo point on your target.")
+	local W = UI.CONTENT_W
+	p:Add(select(2, UI.DBToggle(p, 0, p.y, W, "comboBar", "Show the combo point bar", "While you have points or are in combat.")) + 6)
+	p:Add(select(2, UI.DBToggle(p, 0, p.y, W, "comboPulse", "Pulse at 5 points", "Time for a finisher.")) + 6)
+	p:Add(select(2, UI.DBToggle(p, 0, p.y, W, "comboAlways", "Always show the bar", "Also out of combat with no points.")) + 8)
+	p:Add(UI.Note(p, p.y, "Unlock frames to move the bar or scroll on it to resize it."))
+end
+
 local function TravelPage(UI)
 	local p = UI.NewPage("Travel", "Your Hearthstone beside the game menu (Escape).")
 	p:Add(select(2, UI.DBToggle(p, 0, p.y, UI.CONTENT_W, "travel", "Show the travel panel when the game menu opens")) + 8)
@@ -40,5 +49,6 @@ end
 
 ns.optionPages[#ns.optionPages + 1] = PoisonPage
 ns.optionPages[#ns.optionPages + 1] = ReagentPage
+ns.optionPages[#ns.optionPages + 1] = ComboPage
 ns.optionPages[#ns.optionPages + 1] = TravelPage
-Bound.InstallOptions(ns, { header = "Rogue helper", launcher = "Rogue helper: poisons, reagents." })
+Bound.InstallOptions(ns, { header = "Rogue helper", launcher = "Rogue helper: poisons, reagents, combo points." })
