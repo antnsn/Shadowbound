@@ -28,7 +28,7 @@ In `/shadow`, page **Combo points**:
 | Setting | Default | What it does |
 | --- | --- | --- |
 | Show the combo point bar | On | Turns the bar on or off. |
-| Pulse at 5 points | On | The drops flash a few times when you reach 5 points. |
+| Flash at 5 points | On | The drops flash a few times when you reach 5 points. |
 | Always show the bar | Off | Keeps the bar up out of combat with no points too. |
 
 ## Good to know

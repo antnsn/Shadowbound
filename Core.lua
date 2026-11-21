@@ -35,9 +35,6 @@ ns.disabled = Bound:NewAddon(addonName, ns, {
 		ohPoint = { "CENTER", "UIParent", "CENTER", -250, 140 },
 		flash = true, flashLow = 5, blinding = true, blindingLow = 3, poisonStock = true, poisonLow = 5,
 		rgPoint = { "CENTER", "UIParent", "CENTER", 250, 200 },
-		-- the combo point bar: on, pulse at 5, shown only with points or in combat
-		comboBar = true, comboPulse = true, comboAlways = false,
-		cpPoint = { "CENTER", "UIParent", "CENTER", 0, -180 },
 		travel = true,
 		wrPoint = { "CENTER", "UIParent", "CENTER", 0, 320 },
 		wfPoint = { "CENTER", "UIParent", "CENTER", 0, 260 },
