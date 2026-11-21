@@ -9,6 +9,10 @@ if wb.mood == "rogue" then
 	local titles = {}
 	for _, p in ipairs(wb.ns.optionsState.pages) do titles[#titles + 1] = p.title end
 	wb.expect("pages", table.concat(titles, ", "), "Poisons, Reagents, Combo points, Travel, Extras, Skin")
+	-- run from git, the version is still the packager's placeholder: show none rather than "v@project-version@"
+	local ver = wb.ns.optionsState.version
+	wb.check(ver ~= nil, "the header has a version line")
+	wb.check(not (ver:GetText() or ""):find("@", 1, true), "no raw version placeholder in the header")
 	wb.openGameMenu()
 	wb.expect("the travel panel (Hearthstone only) with the menu", wb.shown("ShadowboundTravel"), true)
 else
