@@ -91,7 +91,7 @@ local cards, overlays = {}, {}
 local function UpdateHand(h)
 	local card, overlay = cards[h.key], overlays[h.key]
 	if ns.unlocked then
-		card:SetStatus("Missing: click for Instant Poison"); card:Show(); card:Glow(false)
+		card:SetStatus("Missing: Instant Poison"); card:Show(); card:Glow(false)
 		if not InCombatLockdown() then overlay:Sync(nil) end
 		return
 	end
@@ -107,7 +107,7 @@ local function UpdateHand(h)
 			if id then
 				name = ns.PoisonName(kind, rank)
 				macro = ("/use item:%d\n/use %d"):format(id, h.slot)
-				status = (left and (Bound.FormatTime(left) .. " left") or "Missing") .. ": click for " .. name
+				status = (left and (Bound.FormatTime(left) .. " left") or "Missing") .. ": " .. name -- the click is in the explanation
 				urgent = not left
 			else
 				status, urgent = "No " .. ns.PoisonName(kind) .. " in your bags", true
@@ -130,7 +130,7 @@ end
 
 function M:Init()
 	for _, h in ipairs(HANDS) do
-		local card = ns.MakeCard(h.frame)
+		local card = ns.MakeCard(h.frame, { width = 300 }) -- room for "12:41 left: Mind-numbing Poison III"
 		card:SetIcon(C_Item.GetItemIconByID(D.poisons.Instant[1]))
 		card:SetTitle(h.title)
 		card:SetExplain(ns.Help[h.key .. "Poison"])

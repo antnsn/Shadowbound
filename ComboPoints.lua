@@ -1,12 +1,13 @@
--- The combo point bar: five drops (Marius' painted art), one lit for each combo point on your
--- target, greyed out for the rest. Shown while you have points or are in combat (or always, if
--- picked), with a few quick flashes when you reach 5. Movable and resizable like the cards.
+-- The combo point bar: five drops (Marius' painted art), one lit with a green glow for each combo
+-- point on your target, greyed out for the rest. Shown while you have points or are in combat (or
+-- always, if picked), with a few quick flashes when you reach 5. Movable and resizable like the cards.
 -- Points the addon can't read (a secret value) hide the bar rather than show a wrong count.
 local _, ns = ...
 if ns.disabled then return end
 
 local MAX, SIZE, GAP = 5, 30, 4
 local DIM = { 0.30, 0.30, 0.30, 0.55 }
+local GLOW = { 0.30, 1, 0.30, 0.85 } -- the green glow round a lit drop
 
 -- combo points on the target, or nil when they can't be read
 function ns.ComboPoints()
@@ -27,6 +28,7 @@ local bar, last, pulses = nil, nil, 0
 local function Light(n)
 	for i, p in ipairs(bar.pips) do
 		p.lit = i <= n
+		p.glow:SetShown(p.lit)
 		if p.lit then p:SetVertexColor(1, 1, 1, 1) else p:SetVertexColor(DIM[1], DIM[2], DIM[3], DIM[4]) end
 	end
 end
@@ -58,6 +60,15 @@ function M:Init()
 		p:SetTexture(ns.MEDIA .. "ComboPoint")
 		p:SetSize(SIZE, SIZE)
 		p:SetPoint("LEFT", bar, "LEFT", (i - 1) * (SIZE + GAP), 0)
+		-- the glow: the drop's shape grown and blurred (Media/ComboGlow), added behind it
+		local g = bar:CreateTexture(nil, "BACKGROUND")
+		g:SetTexture(ns.MEDIA .. "ComboGlow")
+		g:SetSize(SIZE / 0.6, SIZE / 0.6) -- the drop fills 3/5 of the glow texture
+		g:SetPoint("CENTER", p, "CENTER")
+		g:SetBlendMode("ADD")
+		g:SetVertexColor(GLOW[1], GLOW[2], GLOW[3], GLOW[4])
+		g:Hide()
+		p.glow = g
 		bar.pips[i] = p
 	end
 	-- the pulse: the drops flash bright and dim a few times (only animation calls LibBound's cards

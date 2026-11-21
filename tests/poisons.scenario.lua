@@ -29,7 +29,7 @@ elseif m == "poisoned" then
 	wb.expect("off hand poisoned: no card", oh, false)
 elseif m == "expiring" then
 	wb.expect("main hand runs out soon: card", mh, true)
-	wb.check(status("ShadowboundMainHandFrame"):find("left: click for Instant Poison", 1, true), "time left and the poison")
+	wb.check(status("ShadowboundMainHandFrame"):find("left: Instant Poison", 1, true), "time left and the poison")
 	wb.expect("off hand has plenty: no card", oh, false)
 else
 	wb.expect("main-hand card", mh, true)
@@ -37,7 +37,8 @@ else
 	local main = ({ bestrank = { 6950, "Instant Poison III" }, choice = { 3776, "Crippling Poison II" },
 		fallback = { 3775, "Crippling Poison" } })[m] or { 6947, "Instant Poison" }
 	local id, name = main[1], main[2]
-	wb.expect("status names the poison", status("ShadowboundMainHandFrame"), "Missing: click for " .. name)
+	wb.expect("status names the poison", status("ShadowboundMainHandFrame"), "Missing: " .. name)
+	wb.expect("a card wide enough for the longest poison name", wb.frame("ShadowboundMainHandFrame"):GetWidth(), 300)
 	wb.check(T.macroFor("/use item:" .. id .. "\n/use 16"), "a click applies it to the main hand (16)")
 	if m == "nooff" or m == "heldoff" then
 		wb.expect("no off-hand weapon: no off-hand card", oh, false)
@@ -53,7 +54,7 @@ else
 		local off = ({ bestrank = { 2893, "Deadly Poison II" }, choice = { 6947, "Instant Poison" },
 			fallback = { 3775, "Crippling Poison" } })[m] or { 2892, "Deadly Poison" }
 		local offId, offName = off[1], off[2]
-		wb.expect("off-hand status", status("ShadowboundOffHandFrame"), "Missing: click for " .. offName)
+		wb.expect("off-hand status", status("ShadowboundOffHandFrame"), "Missing: " .. offName)
 		wb.check(T.macroFor("/use item:" .. offId .. "\n/use 17"), "a click applies it to the off hand (17)")
 	end
 	if m == "combat" then

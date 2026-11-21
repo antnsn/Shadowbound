@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.1.0 beta 4
+
+- **Combo points glow**: each lit drop has a soft green glow round it.
+- **Poison cards** are wider and say just the poison (`Missing: Instant Poison IV`), so the line is no longer cut off. The tooltip says a click applies it.
+
 ## 0.1.0 beta 3
 
 - **Fixed**: beta 2 failed to load (`ComboPoints.lua:60: attempt to call a nil value`): the combo point pulse used an animation call Forever doesn't have. The drops now flash a few times at 5 points instead.

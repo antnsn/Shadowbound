@@ -24,8 +24,8 @@ Shadowbound has one card per hand: **Main-hand poison** and **Off-hand poison**.
 
 What the card says:
 
-- **Gone.** `Missing: click for Instant Poison IV`, in the warning color.
-- **Running out.** The time left and the poison, for example `2:41 left: click for Deadly Poison II`.
+- **Gone.** `Missing: Instant Poison IV`, in the warning color. Click the card to apply it.
+- **Running out.** The time left and the poison, for example `2:41 left: Deadly Poison II`.
 - **Not in your bags.** `No Wound Poison in your bags`, in the warning color. The card can't be clicked then.
 
 Click the card out of combat and Shadowbound applies the poison to that weapon. It uses the best rank of that poison you carry. The card goes away as soon as the poison is on.

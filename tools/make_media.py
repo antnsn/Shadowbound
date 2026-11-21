@@ -118,6 +118,20 @@ def combo_point(size=64, art=COMBO):
     return sq.resize((size, size), Image.LANCZOS)
 
 
+def combo_glow(size=64, art=COMBO):
+    """A soft glow in the drop's shape, white on alpha (the game tints it green and adds it behind
+    a lit drop): the drop's outline, grown and blurred."""
+    drop = combo_point(size, art).getchannel("A")
+    small = drop.resize((size * 3 // 5, size * 3 // 5), Image.LANCZOS)  # room round the edge to glow into
+    a = Image.new("L", (size, size), 0)
+    a.paste(small, ((size - small.width) // 2, (size - small.height) // 2))
+    a = a.filter(ImageFilter.MaxFilter(5)).filter(ImageFilter.GaussianBlur(5))
+    a = a.point(lambda v: min(255, int(v * 1.6)))
+    out = Image.new("RGBA", (size, size), (255, 255, 255, 0))
+    out.putalpha(a)
+    return out
+
+
 def save(img, name):
     img.save(OUT + name + ".tga")
     print("wrote", OUT + name + ".tga", img.size)
@@ -133,3 +147,4 @@ if __name__ == "__main__":
     save(icon(64), "Icon64")
     save(icon(128), "Icon128")
     save(combo_point(), "ComboPoint")
+    save(combo_glow(), "ComboGlow")
