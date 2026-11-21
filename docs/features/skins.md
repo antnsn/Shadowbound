@@ -19,6 +19,8 @@ Shadowbound comes in three looks. They all work the same way, only the frames lo
 
 ## How to switch
 
+![The Skin page]({{ '/screenshots/options-skin.png' | relative_url }})
+
 1. Type `/shadow` and open the **Skin** page.
 2. Click the **Skin** button to step through the skins (right-click goes back).
 3. Click **Reload now**, or type `/reload` later. The new skin shows after the reload.

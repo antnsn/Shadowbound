@@ -11,6 +11,8 @@ Press Escape and a small **Travel** panel opens beside the game menu, with your 
 
 ## What it does
 
+![The travel panel beside the game menu]({{ '/screenshots/travel.png' | relative_url }})
+
 - The panel shows whenever the game menu opens, out of combat.
 - Rogues have no travel spells, so the panel holds one row: **Hearthstone**, with the inn it is set to, for example `Hearthstone: Lion's Pride Inn`.
 - The row only shows while you carry a Hearthstone.
@@ -22,6 +24,8 @@ Press Escape and a small **Travel** panel opens beside the game menu, with your 
 2. Click **Hearthstone** in the panel.
 
 ## Settings
+
+![The Travel page]({{ '/screenshots/options-travel.png' | relative_url }})
 
 In `/shadow`, page **Travel**:
 

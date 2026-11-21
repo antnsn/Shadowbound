@@ -11,6 +11,9 @@ Two buffs that help while you level on Forever: Well-Rested from a Cozy Sleeping
 
 ## What it does
 
+![The Well-Rested card]({{ '/screenshots/frames/wrpoint.png' | relative_url }})
+![The Well Fed card]({{ '/screenshots/frames/wfpoint.png' | relative_url }})
+
 - **Warning.** At a set time left (5 minutes for Well-Rested, 3 for Well Fed), a message shows in the middle of the screen and in chat, for example `Well Fed: 3 min left`, with a sound.
 - **Countdown card.** From then on a card counts down the time left.
 - **Well Fed is gone.** When Well Fed drops off, a message says so.
@@ -22,6 +25,8 @@ Two buffs that help while you level on Forever: Well-Rested from a Cozy Sleeping
 2. Want to hear what the warning sounds like? Click **Test** next to Well-Rested or Well Fed on the **Extras** page.
 
 ## Settings
+
+![The Extras page]({{ '/screenshots/options-extras.png' | relative_url }})
 
 In `/shadow`, page **Extras**. Well-Rested and Well Fed each have the same settings:
 

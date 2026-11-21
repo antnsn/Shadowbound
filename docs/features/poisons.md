@@ -11,6 +11,9 @@ Poison on both weapons, watched for you. When a coat runs low or is gone, a card
 
 ## What it does
 
+![The main-hand poison card]({{ '/screenshots/frames/mhpoint.png' | relative_url }})
+![The off-hand poison card]({{ '/screenshots/frames/ohpoint.png' | relative_url }})
+
 Shadowbound has one card per hand: **Main-hand poison** and **Off-hand poison**. A card shows when all of this is true:
 
 - the card is turned on for that hand (both are on by default),
@@ -64,6 +67,8 @@ Shadowbound knows these ranks and always uses the highest one in your bags:
 To move the cards, see [Frames and minimap](frames-and-minimap.html).
 
 ## Settings
+
+![The Poisons page]({{ '/screenshots/options-poisons.png' | relative_url }})
 
 In `/shadow`, page **Poisons**. The main hand and the off hand each have their own section:
 
