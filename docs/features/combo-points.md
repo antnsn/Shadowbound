@@ -36,5 +36,5 @@ In `/shadow`, page **Combo points**:
 **The bar stays hidden in combat.**
 WoW: Forever hides some combat values from addons. If it hides combo points, Shadowbound hides the bar rather than show a wrong count. Tell us if that happens to you.
 
-**The drops look the same in every skin.**
-They are painted art, so the Shadow, Blizzard and Flat skins share them.
+**The Blizzard and Flat skins.**
+The painted drops belong to the Shadow skin. The Blizzard and Flat skins show five plain squares instead, lit in the same colour.

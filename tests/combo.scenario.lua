@@ -1,4 +1,4 @@
---@moods: none some five nopulse combat always off secret unlocked change warrior
+--@moods: none some five nopulse combat always off secret unlocked change warrior flat blizzard
 -- the combo point bar: five drops, lit for each point on your target; shown while you have points
 -- or are in combat (or always, if picked); a short pulse when you reach 5
 local T = dofile(wb.dir .. "/tests/_rogue.lua")
@@ -12,11 +12,12 @@ local db = {}
 if m == "nopulse" then db.comboPulse = false end
 if m == "always" then db.comboAlways = true end
 if m == "off" then db.comboBar = false end
+if m == "flat" or m == "blizzard" then db.skin = m end
 wb.login({ saved = { ShadowboundDB = db } })
 wb.setWeaponEnchant(1800, 7, "main"); wb.setWeaponEnchant(1800, 8, "off") -- the poison cards stay out of the way
 local G = wb.G
 local points = ({ none = 0, some = 3, five = 5, nopulse = 5, combat = 0, always = 0, off = 3, secret = 0,
-	unlocked = 0, change = 0, warrior = 3 })[m]
+	unlocked = 0, change = 0, warrior = 3, flat = 3, blizzard = 3 })[m]
 G.GetComboPoints = function(unit, target)
 	if unit ~= "player" or target ~= "target" then return 0 end
 	if m == "secret" then return wb.SECRET end
@@ -46,6 +47,7 @@ if m == "none" then
 elseif m == "some" then
 	wb.expect("shown with points", shown, true)
 	wb.expect("three lit", Lit(), 3)
+	wb.expect("the painted look in the Shadow skin", bar.look, "painted")
 	local glows = 0
 	for i, p in ipairs(bar.pips) do
 		wb.check(p.glow ~= nil, "drop " .. i .. " has a glow")
@@ -83,6 +85,15 @@ elseif m == "unlocked" then
 	wb.check(moved, "it can be moved (saved as cpPoint)")
 	wb.ns.ToggleMove()
 	wb.expect("hidden again once locked", wb.shown("ShadowboundComboFrame"), false)
+elseif m == "flat" or m == "blizzard" then
+	-- the Blizzard and Flat skins: plain squares instead of the painted drops
+	wb.expect("the plain look (" .. m .. ")", bar.look, m)
+	wb.expect("shown, three lit", shown and Lit(), 3)
+	local c = bar.pips[1].__color or {}
+	wb.check((c[2] or 0) > (c[1] or 0), "lit in the glow's colour (green)")
+	local u = bar.pips[5].__color or {}
+	wb.check((u[2] or 1) < 0.3, "unlit dark")
+	for _, pip in ipairs(bar.pips) do wb.check(not pip.glow:IsShown(), "no glow in the plain look") end
 elseif m == "change" then
 	Set(2)
 	wb.expect("points come in: shown", wb.shown("ShadowboundComboFrame"), true)

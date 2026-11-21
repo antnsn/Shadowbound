@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.1.0 beta 5
+
+- In the Blizzard and Flat skins the combo points take a plain look: five squares, lit green.
+- The options header shows no version number when the addon runs from a git copy.
+
 ## 0.1.0 beta 4
 
 - **Combo points glow**: each lit drop has a soft green glow round it.
