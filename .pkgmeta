@@ -1,0 +1,28 @@
+# CurseForge automatic packaging (https://support.curseforge.com/support/solutions/articles/9000197281)
+# A tag publishes: "v0.2.0" = release, "v0.2.0-beta.1" = beta, "v0.2.0-alpha.1" = alpha.
+package-as: Shadowbound
+
+# LibBound-1.0, the shared core of the Bound addons, is fetched into Libs/LibBound
+externals:
+  Libs/LibBound:
+    url: https://github.com/antnsn/LibBound
+
+# CurseForge shows this file as the changelog of each release (newest version on top)
+manual-changelog:
+  filename: CHANGELOG.md
+  markup-type: markdown
+
+ignore:
+  - docs
+  - tests
+  - tools
+  - .luacheckrc
+  - wowbench.toml
+  - CLAUDE.md
+  - AGENTS.md
+  - .beads
+  - .claude
+  - CURSEFORGE.md
+  - Shadowbound.png
+  - README.md
+  - .gitignore

@@ -1,0 +1,18 @@
+## Interface: 16001
+## Title: Shadowbound
+## Notes: Rogue helper: a card per weapon when its poison is missing or running out (click to apply from your bags), Flash Powder, Blinding Powder and poison stock warnings, Well Rested and Well Fed, the Hearthstone on the Escape menu. /shadow for options.
+## X-License: GPL-3.0-or-later
+## Author: Rheolux
+## Version: @project-version@
+## IconTexture: Interface\AddOns\Shadowbound\Media\Icon64
+## SavedVariables: ShadowboundDB
+
+Libs\LibStub\LibStub.lua
+Libs\LibBound\LibBound.xml
+
+Core.lua
+Skin.lua
+Help.lua
+Poisons.lua
+Reagents.lua
+Options.lua
