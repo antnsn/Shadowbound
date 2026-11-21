@@ -50,6 +50,9 @@ elseif m == "some" then
 elseif m == "five" then
 	wb.expect("all lit", Lit(), 5)
 	wb.expect("a pulse at 5", bar.pulse:IsPlaying(), true)
+	wb.advance(1)
+	wb.expect("a short one: still again after a moment", bar.pulse:IsPlaying(), false)
+	wb.expect("still all lit", Lit(), 5)
 elseif m == "nopulse" then
 	wb.expect("all lit", Lit(), 5)
 	wb.expect("no pulse when turned off", bar.pulse:IsPlaying(), false)
@@ -86,4 +89,10 @@ elseif m == "change" then
 	wb.expect("spent: hidden again", wb.shown("ShadowboundComboFrame"), false)
 	Set(5)
 	wb.expect("a new 5: a new pulse", bar.pulse:IsPlaying(), true)
+end
+
+-- the pulse uses only animation calls the game has (LibBound's cards use them in game):
+-- AnimationGroup:SetLoopType and Scale:SetScale don't exist on Forever and broke loading
+for _, bad in ipairs({ "AnimGroup:SetLoopType", "Anim:SetScale" }) do
+	wb.check(not wb.gaps[bad], "no " .. bad .. " (not in the game)")
 end
