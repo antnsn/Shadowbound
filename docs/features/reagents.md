@@ -11,6 +11,8 @@ Vanish uses Flash Powder, Blind uses Blinding Powder, and each coat of poison us
 
 ## What it does
 
+![The reagents card]({{ '/screenshots/frames/rgpoint.png' | relative_url }})
+
 One card, **Reagents running low**, shows when one of these is at or below its limit:
 
 | Part | Shows once | Counts | Warns at (default) |
@@ -34,6 +36,8 @@ One card, **Reagents running low**, shows when one of these is at or below its l
 Shadowbound does not buy or make reagents for you.
 
 ## Settings
+
+![The Reagents page]({{ '/screenshots/options-reagents.png' | relative_url }})
 
 In `/shadow`, page **Reagents**:
 

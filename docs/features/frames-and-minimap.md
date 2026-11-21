@@ -13,6 +13,8 @@ Put every Shadowbound frame exactly where you want it, and open the options from
 
 ### Moving and resizing frames
 
+![Unlocked frames with the grid]({{ '/screenshots/frames-unlocked.png' | relative_url }})
+
 - Shadowbound has five frames: the two [poison cards](poisons.html) (main hand and off hand), the [reagents card](reagents.html), and the [Well-Rested and Well Fed](well-rested-and-well-fed.html) cards.
 - Unlocking shows **every** frame, with sample content, so you can place frames that are normally hidden.
 - Drag a frame to move it. Frames snap to a grid around the center of your screen. Hold **Shift** while dragging to place a frame freely.

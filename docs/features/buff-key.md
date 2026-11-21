@@ -25,6 +25,8 @@ Press one key, out of combat, and Shadowbound applies the poison a card asks for
 
 ## Settings
 
+![The Extras page with the buff key]({{ '/screenshots/options-extras.png' | relative_url }})
+
 In `/shadow`, page **Extras**, section **Buff key**:
 
 | Setting | Default | What it does |
