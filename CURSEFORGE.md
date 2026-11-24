@@ -33,6 +33,7 @@ Shadowbound keeps poison on your weapons and your bags stocked: a card for each 
 ## Also in it
 - **Buff key** (Extras page): out of combat, each press applies the poison the top card asks for.
 - **Well Rested and Well Fed**: a countdown before they run out, with a sound if you like.
+- **Carrot on a Stick** (Extras page, off by default): worn while you ride, in the trinket slot you pick; your own trinket goes back on when you get off. Not in instances, and never in combat.
 - **Explained**: hover over a card or button for a plain-word explanation of what it does and why (can be turned off).
 - **Your layout**: every frame can be moved, snapped to a grid and scaled (`/shadow unlock`).
 - **Three skins**: the rogue look (Shadow), Blizzard and Flat.
