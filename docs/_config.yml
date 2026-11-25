@@ -38,6 +38,7 @@ exclude:
   - Gemfile.lock
   - vendor
   - .bundle
+  - curseforge # images for the CurseForge gallery (under 2 MB each), not part of the site
 
 # every page gets the theme layout (GitHub's own Pages build adds this implicitly; Jekyll 4 does not)
 defaults:
