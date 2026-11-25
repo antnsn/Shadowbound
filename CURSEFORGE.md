@@ -31,6 +31,7 @@ Shadowbound keeps poison on your weapons and your bags stocked: a card for each 
 - **Press Escape**: beside the game menu you get your Hearthstone.
 
 ## Also in it
+- **Lockbox service**: post your lockbox offer in Trade with one key press, with your Lockpicking skill; a sound and [Invite]/[Whisper] in chat when someone asks.
 - **Buff key** (Extras page): out of combat, each press applies the poison the top card asks for.
 - **Well Rested and Well Fed**: a countdown before they run out, with a sound if you like.
 - **Carrot on a Stick** (Extras page, off by default): worn while you ride, in the trinket slot you pick; your own trinket goes back on when you get off. Not in instances, and never in combat.

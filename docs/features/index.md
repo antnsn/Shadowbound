@@ -14,6 +14,7 @@ Shadowbound does a few small rogue jobs for you. Each page below covers one of t
 - [Reagents](reagents.html): a card when Flash Powder, Blinding Powder or your poisons run low.
 - [Combo points](combo-points.html): five drops, one lit for each combo point on your target, with a pulse at 5.
 - [Travel panel](travel.html): your Hearthstone beside the game menu.
+- [Lockbox service](lockbox-service.html): post your lockbox offer in Trade with one key, and hear it when someone asks.
 - [Well-Rested and Well Fed](well-rested-and-well-fed.html): a warning and a countdown before they run out.
 - [Explanations](explanations.html): what each card and button does, in the tooltip.
 - [Frames and minimap](frames-and-minimap.html): moving and resizing frames, the grid, and the minimap button.
