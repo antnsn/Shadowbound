@@ -48,6 +48,8 @@ Off by default. Turned on, the addon whispers your reply (on the page, with `{na
 
 ## Settings
 
+![The Lockbox service page]({{ '/screenshots/options-lockbox-service.png' | relative_url }})
+
 | Setting | Default | What it does |
 | --- | --- | --- |
 | Alerts | on | the sound and chat line when someone asks |

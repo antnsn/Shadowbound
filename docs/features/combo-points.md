@@ -16,6 +16,8 @@ Your finishers get stronger with each combo point. Shadowbound shows them as fiv
 - **Pulse at 5.** When you reach 5 points, the drops flash a few times: time for a finisher. They flash once each time you reach 5, not again while you stay there.
 - **Your size and place.** Unlock the frames to drag the bar where you want it, and scroll on it to make it bigger or smaller.
 
+![The combo point bar with three points]({{ '/screenshots/frames/cppoint.png' | relative_url }})
+
 ## How to use it
 
 1. Nothing to set up: the bar is on by default, below the middle of the screen.
@@ -24,6 +26,8 @@ Your finishers get stronger with each combo point. Shadowbound shows them as fiv
 ## Settings
 
 In `/shadow`, page **Combo points**:
+
+![The Combo points page]({{ '/screenshots/options-combo-points.png' | relative_url }})
 
 | Setting | Default | What it does |
 | --- | --- | --- |
