@@ -43,4 +43,5 @@ ns.optionPages[#ns.optionPages + 1] = ReagentPage
 -- the combo point bar (LibBound): Marius' green drops with a green glow
 Bound.InstallComboBar(ns, { glow = { 0.30, 1, 0.30, 0.85 }, about = "Five drops, one lit for each combo point on your target." })
 ns.optionPages[#ns.optionPages + 1] = TravelPage
+ns.optionPages[#ns.optionPages + 1] = ns.ServicePage
 Bound.InstallOptions(ns, { header = "Rogue helper", launcher = "Rogue helper: poisons, reagents, combo points." })

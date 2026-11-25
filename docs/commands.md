@@ -17,6 +17,12 @@ Everything in Shadowbound can be set in the options window (`/shadow`). These ch
 | `/shadow` | Opens or closes the options window. `/shadow options` and `/shadow config` do the same. |
 | `/shadow help` | Lists every command in chat. |
 
+## Service
+
+| Command | What it does |
+| --- | --- |
+| `/shadow announce` | Posts your service message in Trade. See [Lockbox service](features/lockbox-service.html). |
+
 ## Frames
 
 | Command | What it does |

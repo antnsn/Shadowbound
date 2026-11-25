@@ -16,4 +16,5 @@ Skin.lua
 Help.lua
 Poisons.lua
 Reagents.lua
+Service.lua
 Options.lua
