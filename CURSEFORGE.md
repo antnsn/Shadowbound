@@ -34,6 +34,7 @@ Shadowbound keeps poison on your weapons and your bags stocked: a card for each 
 - **Lockbox service**: post your lockbox offer in Trade with one key press, with your Lockpicking skill; a sound and [Invite]/[Whisper] in chat when someone asks.
 - **Buff key** (Extras page): out of combat, each press applies the poison the top card asks for.
 - **Well Rested and Well Fed**: a countdown before they run out, with a sound if you like.
+- **Camp Benefits**: a countdown before the campfire buff runs out, and which ticked camp features it lacks.
 - **Carrot on a Stick** (Extras page, off by default): worn while you ride, in the trinket slot you pick; your own trinket goes back on when you get off. Not in instances, and never in combat.
 - **Explained**: hover over a card or button for a plain-word explanation of what it does and why (can be turned off).
 - **Your layout**: every frame can be moved, snapped to a grid and scaled (`/shadow unlock`).

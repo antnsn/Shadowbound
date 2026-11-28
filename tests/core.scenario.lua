@@ -8,7 +8,7 @@ if wb.mood == "rogue" then
 	wb.check(wb.shown("ShadowboundOptions"), "/shadow opens the options")
 	local titles = {}
 	for _, p in ipairs(wb.ns.optionsState.pages) do titles[#titles + 1] = p.title end
-	wb.expect("pages", table.concat(titles, ", "), "Poisons, Reagents, Combo points, Travel, Lockbox service, Extras, Skin")
+	wb.expect("pages", table.concat(titles, ", "), "Poisons, Reagents, Combo points, Travel, Lockbox service, Extras, Camp, Skin")
 	-- run from git, the version is still the packager's placeholder: show none rather than "v@project-version@"
 	local ver = wb.ns.optionsState.version
 	wb.check(ver ~= nil, "the header has a version line")
