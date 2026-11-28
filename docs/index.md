@@ -16,9 +16,6 @@ The rogue helper for World of Warcraft: Forever.
 
 ---
 
-{: .note }
-Shadowbound is a first beta. Spell and item IDs come from Classic and are being checked on Forever. Tell us what doesn't work.
-
 ## Why Shadowbound exists
 
 A rogue keeps poison on both weapons. Each coat lasts 30 minutes or until its charges run out, and it is easy to fight a whole pull without it. Vanish needs Flash Powder and Blind needs Blinding Powder, and both run out at the wrong moment.

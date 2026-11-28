@@ -10,8 +10,6 @@ Shadowbound keeps poison on your weapons and your bags stocked: a card for each 
 
 **Full guide:** https://antnsn.github.io/Shadowbound/
 
-**Beta:** Shadowbound is new. Spell and item IDs come from Classic and are checked on Forever before 0.1.0; tell us what doesn't work.
-
 ## Poisons
 - **One card per weapon**: shows when the main-hand or off-hand weapon has no poison, or it runs out within the minutes you set. A hand with no weapon is skipped.
 - **Click to apply** the poison you picked for that hand (Instant, Deadly, Crippling, Mind-numbing or Wound), the best rank in your bags.
@@ -61,6 +59,10 @@ Shadowbound is one of the Bound addons, one per class, built on the same core: L
 
 ## Changelog
 <!-- changelog:start -->
+### 0.1.0
+
+- **Camp Benefits** (Forever's campfire buff, new **Camp** page): a warning before it runs out, and a chat line naming the camp features you ticked that the campfire lacks (Camp Chair, First Aid Kit, Mana Well, ...). From LibBound, the same in every Bound addon.
+
 ### 0.1.0 beta 7
 
 - **Lockbox service** (new page in `/shadow`): post your lockbox offer in Trade with one key press or `/shadow announce`, with your Lockpicking skill filled in. When someone asks ("anyone open lockbox?") you hear it and get a chat line with [Invite] and [Whisper]. Optional auto-whisper reply, off by default.
